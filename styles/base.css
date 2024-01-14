@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  
+}
+header {
+  padding: 15px;
+  background-color: #86bbd8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header img, header span {
+margin: 15px
+}
+
+header img {
+  width: 100px;
+  box-shadow: 0 10px 20px 15px black;
+}
+header span {
+  font-size: 25px;
+  color: white;
+}
+
+nav div {
+  background-color:#33658a;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a {
+  padding: 15px;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 3s;
+}
+
+.active {
+  background-color: #2f4858;
+}
+
+nav div:hover:not(.active) {
+  
+  background-color: #f6ae2d;
+  transition: 2s;
+}
+
+nav div a:hover {
+  color: #ffffea;
+  text-decoration: 2px underline;
+}
+
+nav div:active {
+  background-color: #f6ae2d;
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 26px;
+  margin: 40px;
+  min-width: 50%;
+  
+}
+
+main h1 {
+  grid-column: 1 / 2;
+  border-bottom: 2px solid #33658a;
+  color: #33658a;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 19px;
+}
+section h2 {
+  padding: 24px;
+  margin: 0;
+  color: white;
+  background-color: #86bbd8;
+  font-size: 19px;
+  text-align: center;
+  
+}
+
+section {
+  box-shadow: 0 5px 5px 10px gray;
+}
+
+section ul {
+  margin: 20px;
+}
+
+section ul li {
+  padding: 8px;
+  font-size: 20px;
+}
+
+section ul li a {
+  color: #33658a;
+  text-decoration: none;
+  transition: 2s;
+}
+
+section ul li a:hover {
+  color: #f6ae2d;
+  text-decoration: 2px underline;
+}
+
+section p {
+  padding: 8px;
+  text-align: center;
+  font-size: 20px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+footer p {
+  margin: 0;
+  padding: 18px;
+  text-align: center;
+  align-self: center;
+  background-color: #86bbd8;
+  color: white;
+  font-size: 20px;
+}
+footer img {
+  margin: 10px;
+}
+
+.photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.photo img, .photo span {
+  margin-bottom: 0;
+}
+#lastModified {
+  margin-top: 0;
+  color: #2f4858;
+}
+footer p:last-child {
+  margin-top: -10px;
+}

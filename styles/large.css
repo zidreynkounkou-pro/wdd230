@@ -1,0 +1,32 @@
+@media screen and (min-width: 1061px){
+  header img {
+    width: 150px;
+  }
+
+  header span {
+    font-size: 3rem;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 26px;
+    margin: 50px;
+    
+  }
+
+  main h1 {
+    grid-column: 1 / 3;
+    font-size: 30px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

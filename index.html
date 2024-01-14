@@ -3,15 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Relga-Zidrey Nkounkou- WDD 230 - Web Frontend Development</title>
+  <meta name="authior" content="Relga-Zidrey Nkounkou">
+  <meta name="description" content="WDD 230 - Web Frontend Development, Relga-Zidrey Nkounkou course assignment portal. HTML and CSS design and development">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/large.css">
+  
 </head>
 <body>
   <header>
-    <nav>
-      <a href="week01/holygrail.html">Holy Grail</a>
-      <a href="week01/media-query.html">Media Query</a>
-    </nav>
+    <img src="images/photo-logo.png" width="50" alt="My image logo">
+    <span>Relga-Zidrey Nkounkou</span>
   </header>
-  <h1>Hello World!</h1>
+  <nav>
+      <div class="active"><a href="index.html">Home</a></div>
+      <div><a href="#">Chamber</a></div>
+      <div><a href="#">Site Plan</a></div>
+      <div><a href="#">Form</a></div> 
+  </nav>
+
+  <main>
+    <h1>WDD 230: Web Frontend Development</h1>
+    <section class="card">
+      <h2>Learning Activities</h2>
+      <ul>
+        <li>Week 01: <a href="week01/">Layout</a> | <a
+            href="week01/w01-team-activity.html">Media Query</a> | <a
+            href="week01/w01-project-milestone.html">JsPen</a></li>
+        <li>Week 02: </li>
+        <li>Week 03:</li>
+        <li>Week 04:</li>
+        <li>Week 05: </li>
+        <li>Week 06: </li>
+  </ul>
+    </section>
+
+    <section class="card">
+      <h2>Information</h2>
+      <div>
+        <p><strong>Weather:</strong>Weather placeholder</p>
+        <p><strong>Number of visitors:</strong>Number of visitors placeholder</p>
+        <p><strong>Time:</strong>Time placeholder</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="photo">
+      &copy;<span id="date"></span>&nbsp;&nbsp;Relga-Zidrey Nkounkou <strong>&nbsp;&nbsp;Brazzaville</strong>
+      <img src="images/flag.png" width="50" alt="Flag">
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/getDates.js"></script>
 </body>
 </html>
