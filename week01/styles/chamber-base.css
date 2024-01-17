@@ -91,12 +91,17 @@ a {
   transition: 2s;
   color: white;
 }
-
-a:hover {
+.events:hover {
+  color: var(--accent1);
+}
+a:hover:not(.events) {
   background-color: var(--accent1);
+}
+a:hover {
   color: var(--accent2);
   text-decoration: 2px underline;
 }
+
 
 nav {
   margin: 0 auto;
