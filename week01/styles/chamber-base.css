@@ -93,7 +93,9 @@ a {
 }
 
 a:hover {
-  color: var(--accent1) ease;
+  background-color: var(--accent1);
+  color: var(--accent2);
+  text-decoration: 2px underline;
 }
 
 nav {
