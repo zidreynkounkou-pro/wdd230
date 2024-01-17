@@ -39,21 +39,24 @@ h2, h3 {
 }
 
 .tble {
-  text-align: center;
-  margin: 0 auto;
   width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+  overflow-x: auto;
+  
 }
 
 .tble th {
-  padding: 10px;
-  margin: 0;
-  border: 3px solid black;
+  text-align: center;
+  border: 1px solid black;
+
 }
 
 .tble td {
-  padding: 10px;
-  border: 3px solid black;
-  margin: 0;
+  text-align: center;
+  height: 3.5rem;
+  border: 1px solid black;
 }
 
 .primary {
