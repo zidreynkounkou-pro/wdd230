@@ -1,0 +1,9 @@
+@media screen and (max-width: 928px) {
+  nav {
+    display: block;
+  }
+  nav a {
+    display: block;
+  }
+  
+}
