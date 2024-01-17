@@ -5,7 +5,10 @@
   nav a {
     display: block;
   }
+  
+}
 
+@media screen and (max-width:249px){
   th, td {
     font-size: 12px;
   }
