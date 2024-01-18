@@ -9,7 +9,7 @@ body {
 }
 header {
   padding: 15px;
-  background-color:  blue;
+  background-color:  rgba(55, 0, 255, 0.821);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,10 +84,14 @@ section h2 {
   padding: 24px;
   margin: 0;
   color: white;
-  background-color: #86bbd8;
+  background-color:  rgba(55, 0, 255, 0.821);
   font-size: 19px;
   text-align: center;
   
+}
+
+li {
+  font-weight: bold;
 }
 
 section {
@@ -130,7 +134,7 @@ footer p {
   padding: 18px;
   text-align: center;
   align-self: center;
-  background-color: #86bbd8;
+  background-color:  rgba(55, 0, 255, 0.821);
   color: white;
   font-size: 20px;
 }
@@ -149,7 +153,7 @@ footer img {
 }
 #lastModified {
   margin-top: 0;
-  color: #2f4858;
+  color: white;
 }
 footer p:last-child {
   margin-top: -10px;
