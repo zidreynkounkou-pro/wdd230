@@ -95,14 +95,21 @@ h2, h3 {
   margin: 0 auto;
 }
 
-a {
+a:not(.events) {
   text-decoration: none;
   transition: 2s;
   color: #0b090a;
 }
-.events:hover {
-  color: var(--accent1);
+
+.events {
+  text-decoration: none;
+  transition: 2s;
+  color: white;
 }
+.events:hover {
+  color:  #d5f2e3;
+}
+
 a:hover:not(.events, .url-color) {
   background-color: var(--accent1);
 }
@@ -148,14 +155,14 @@ nav a:hover {
   width: 50%;
   padding: 20px;
   align-self: center;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   transition: 2s;
 }
 
 
 .scenarios .scenario:hover {
-  background-color: var(--accent2);
-   cursor: progress;
+  background-color: var(--primary);
+  cursor: progress;
 }
 
 .example {
