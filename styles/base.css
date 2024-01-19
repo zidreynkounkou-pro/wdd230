@@ -29,7 +29,7 @@ header span {
 
 nav a {
   background-color:#468189;
-  color: #ffffff;
+  color: black;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -48,7 +48,7 @@ nav a {
 nav a:hover{
   
   background-color: #f4e9cd;
-  color: #031926;
+  text-decoration: 2px solid black underline;
   transition: 2s;
 }
 
