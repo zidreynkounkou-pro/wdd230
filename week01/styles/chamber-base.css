@@ -67,17 +67,22 @@ h2, h3 {
 
 .primary {
   background-color: var(--primary);
+  color: white;
 }
 .secondary {
   background-color: var(--secondary);
+  color: white;
+
 }
 
 .accent1 {
   background-color: var(--accent1);
+  color: white;
 }
 
 .accent2 {
   background-color: var(--accent2);
+  color: #0b090a;
 }
 
  main p:not(.example p) {
@@ -93,7 +98,7 @@ h2, h3 {
 a {
   text-decoration: none;
   transition: 2s;
-  color: white;
+  color: #0b090a;
 }
 .events:hover {
   color: var(--accent1);
