@@ -52,6 +52,10 @@ nav a:hover{
   transition: 2s;
 }
 
+nav a:focus {
+  background-color: #f4e9cd;
+}
+
 
 
 main {
