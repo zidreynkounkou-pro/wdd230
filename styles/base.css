@@ -53,18 +53,14 @@ header span {
 .show a {
   display: flex;
   flex-direction: column;
-  position: relative;
-  bottom: -14px;
   min-width: 334px;
 }
 
-nav a {
-  display:none;
+nav  {
+  padding: -100px;
 }
 
-nav {
-  margin-top: -14px;
-}
+
 nav a {
   background-color:#468189;
   color: black;
@@ -72,7 +68,8 @@ nav a {
   padding: 15px;
   font-size: 22px;
   text-decoration: none;
-  transition: 3s;
+  transition: 2s;
+  display:none;
 }
 
 .card div {
@@ -209,5 +206,5 @@ footer p:last-child {
 }
 
 #dark {
-  font-size: 3rem;
+  font-size: 2rem;
 }
