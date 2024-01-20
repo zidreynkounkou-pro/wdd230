@@ -1,12 +1,7 @@
 /* 🌙☀️🔆☼ 🕶️ ✅ ❤️ 🎁 */
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
 body {
   min-width: 445px;
-  margin: 0;
   font-family: 'Roboto', sans-serif;
   
 }
@@ -114,9 +109,6 @@ section h2 {
   text-align: center;
 }
 
-li {
-  font-weight: bold;
-}
 
 section {
   box-shadow: 0 5px 5px 10px gray;
@@ -125,11 +117,13 @@ section {
 
 section ul {
   margin: 20px;
+  padding: 18px;
 }
 
 section ul li {
   padding: 8px;
   font-size: 20px;
+  font-weight: bold;
 }
 
 section ul li a {
