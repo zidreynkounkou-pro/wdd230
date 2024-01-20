@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    header span {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    header a {
+      text-decoration: none;
+      color: white;
+      margin-left: 10px;
+      font-size: 1.5em;
+    }
+
+    #dark {
+      font-size: 2em;
+    }
+
+    #menu {
+      display: none; /* Hide the menu button by default on larger screens */
+    }
+
+    /* Media query for small screens */
+    @media (max-width: 600px) {
+      #menu {
+        display: inline-block; /* Show the menu button on small screens */
+        margin-left: 10px; /* Add margin for spacing */
+      }
+
+      #dark {
+        display: inline-block; /* Show the sunglasses on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/photo-logo.png" width="50" alt="My image logo">
+    <span>Relga-Zidrey Nkounkou</span>
+    <a id="menu" href="#">☰</a> <!-- Hamburger button symbol -->
+    <a id="dark">🕶️</a>
+  </header>
+</body>
+</html>

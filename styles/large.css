@@ -29,6 +29,7 @@
   nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 0;
   }
 
   main {
@@ -36,7 +37,6 @@
     grid-template-columns: 2fr 1fr;
     grid-gap: 26px;
     margin: 50px;
-    
   }
 
   main h1 {
