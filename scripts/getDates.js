@@ -33,8 +33,10 @@ dark.addEventListener('click', () => {
   if (dark.innerHTML.includes('🕶️')){
     main.style.backgroundColor = 'black';
     main.style.color = 'white';
-    h2.style.backgroundColor = '#031926';
-    h2Ex.style.backgroundColor = '#031926';
+    h2.style.backgroundColor = '#f6ae2d';
+    h2Ex.style.backgroundColor = '#f6ae2d';
+    h2.style.color = 'black';
+    h2Ex.style.color = 'black';
     h1.style.color = 'white';
     dark.innerHTML = '🔆';
   }
