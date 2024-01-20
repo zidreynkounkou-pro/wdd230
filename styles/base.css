@@ -203,4 +203,5 @@ footer p:last-child {
   font-size: 1.2rem;
   background-color: white;
   border-radius: 50%;
+  text-decoration: none;
 }
