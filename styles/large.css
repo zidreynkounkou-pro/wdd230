@@ -43,6 +43,16 @@
     font-size: 30px;
   }
 
+  main .card:first-child {
+    grid-row: 2;
+    grid-column: 1 / 2;
+  }
+
+  main .card:last-child {
+    grid-row: 2;
+    grid-column: 2 / 3;
+  }
+
   footer {
     display: flex;
     flex-direction: column;

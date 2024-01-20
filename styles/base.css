@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 body {
+  min-width: 445px;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   
@@ -14,10 +15,9 @@ header {
   display: flex;
   align-items: center;
   align-self: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 15px;
   margin: 0;
-  min-width: 334px;
 } 
 
 header img, header span {
@@ -53,7 +53,7 @@ header span {
 .show a {
   display: flex;
   flex-direction: column;
-  min-width: 334px;
+  min-width: 352px;
 }
 
 nav  {
@@ -113,7 +113,6 @@ main h1 {
 }
 section h2 {
   padding: 24px;
-  margin: 0;
   color: white;
   background-color: #468189;
   font-size: 19px;
@@ -126,7 +125,7 @@ li {
 
 section {
   box-shadow: 0 5px 5px 10px gray;
-  min-width: 250px;
+ 
 }
 
 section ul {
@@ -159,7 +158,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #031926;
-  min-width: 334px;
 }
 
 footer p {
@@ -207,6 +205,7 @@ footer p:last-child {
 }
 
 #dark {
-  font-size: 2rem;
+  font-size: 1.2rem;
   background-color: white;
+  border-radius: 50%;
 }
