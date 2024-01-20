@@ -9,3 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
   let lastModifiedDate = document.lastModified;
   document.querySelector("#lastModified").innerText = `Last modified: ${lastModifiedDate}`;
 });
+
+
+// Humberger button
+
+const nav = document.querySelector('nav');
+const button = document.querySelector('#menu');
+
+button.addEventListener('click', () =>{
+  nav.classList.toggle('show');
+  button.classList.toggle('show');
+})
+
