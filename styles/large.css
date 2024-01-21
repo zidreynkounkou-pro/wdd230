@@ -11,24 +11,22 @@
     display: none;
   }
 
+
+nav {
+ 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: auto;
+}
+
   nav a {
     display: flex;
     background-color:#468189;
     color: black;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 15px;
-    font-size: 22px;
-    text-decoration: none;
-    transition: 3s;
-  
-  }
-
-  nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    transition: 1s;
   }
 
   main {
@@ -58,7 +56,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+   
   }
 
   footer .copyDate {

@@ -1,10 +1,6 @@
 /* 🌙☀️🔆☼ 🕶️ ✅ ❤️ 🎁 */
 
-body {
-  min-width: 445px;
-  font-family: 'Roboto', sans-serif;
-  
-}
+
 header {
   background-color: #031926;
   display: flex;
@@ -58,8 +54,9 @@ nav a {
   padding: 15px;
   font-size: 22px;
   text-decoration: none;
-  transition: 2s;
-  display:none;
+  margin: 0;
+  transition: 1s;
+  display: none;
 }
 
 .card div {

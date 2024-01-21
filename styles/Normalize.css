@@ -5,11 +5,11 @@
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
+  min-width: 445px;
   padding: 0;
   background: #ffffff;
   list-style: none;
-}
 
-nav {
-  margin: 0;
+  border: 5px solid red;
 }
