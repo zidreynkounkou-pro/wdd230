@@ -7,5 +7,11 @@
 body {
   margin: 0;
   padding: 0;
+  background: #ffffff;
   list-style: none;
 }
+
+h1, h2, section, div, footer {
+  margin: 0;
+  padding: 0;
+} 
