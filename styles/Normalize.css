@@ -11,3 +11,7 @@ body {
   background: #ffffff;
   list-style: none;
 }
+
+h1, h2 {
+  margin: 0;
+}
