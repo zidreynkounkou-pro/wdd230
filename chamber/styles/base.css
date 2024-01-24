@@ -253,6 +253,7 @@ label {
 
 input[type="text"],
 input[type="email"], textarea {
+  background-color: #ffffff;
   padding: 12px;
   width: 70%;
 }
