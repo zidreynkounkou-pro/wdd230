@@ -53,10 +53,11 @@ nav a:hover {
   text-decoration: 2px var(--accent2) underline;
 }
 
-nav.current a {
+nav a:focus {
   background-color: rgb(46, 117, 179);
   color: #ffffff;
   font-size: 18px;
+  outline: none;
 }
 
 
@@ -288,7 +289,7 @@ button:hover,
 
 footer {
   background-color: var(--primary);
-  padding: 100px;
+  padding: 40px;
 }
 .div-footer {
   display: flex;

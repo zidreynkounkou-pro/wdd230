@@ -5,19 +5,14 @@ const lastModified = document.querySelector('#lastModified');
 lastModified.innerHTML = `Last modified: ${document.lastModified}`;
 
 // Current link implementation
+document.addEventListener('DOMContentLoaded', function (){
+  const a = document.querySelector('nav a');
 
-document.addEventListener("DOMContentLoaded", function(){
-  const currentUrl = window.location.pathname;
+  a.focus();
+})
 
-  // Get all links
-
-  const links = document.querySelectorAll('nav a');
-
-  links.forEach( function (link) {
-    if (link.getAttribute('href') === currentUrl)
-    {
-      link.parentNode.classList.add('current');
-    }
-  });
-
-});
+/*
+   For example, you might set focus when a button is clicked:
+  document.getElementById("myButton").addEventListener("click", function() {
+       myInput.focus();
+   }); */
