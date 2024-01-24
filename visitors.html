@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitor Counter</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      incrementVisitorCount();
+    });
+    
+    function incrementVisitorCount() {
+      // Check if localStorage is supported
+      if (typeof(Storage) !== "undefined") {
+        // Check if the 'visitorCount' key exists in localStorage
+        if (localStorage.getItem('visitorCount')) {
+          // Increment the existing count
+          let count = parseInt(localStorage.getItem('visitorCount'));
+          count++;
+          localStorage.setItem('visitorCount', count);
+        } else {
+          // Set the initial count to 1
+          localStorage.setItem('visitorCount', 1);
+        }
+  
+        // Display the count on the page
+        document.getElementById('visitorCount').innerHTML = localStorage.getItem('visitorCount');
+      } else {
+        console.error('LocalStorage is not supported. Visitor count cannot be tracked.');
+      }
+    }
+  </script>
+  
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>This website has been visited <span id="visitorCount">0</span> times.</p>
+
+  <!-- Call the function to increment the count when a visitor loads the page -->
+  <script>
+    incrementVisitorCount();
+  </script>
+</body>
+</html>
