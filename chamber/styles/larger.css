@@ -243,7 +243,6 @@ button,
 [type="submit"]{
   width: 70%;
   padding: 20px;
-  padding-right: ;
   background-color: var(--accent2);
   color: black;
   border-radius: 100px;
@@ -251,7 +250,6 @@ button,
 }
 
 .submit-class {
-  width: -100%;
   margin-left: 166px;
   margin-top: 10px;
   margin-right: 50px;
