@@ -1,12 +1,15 @@
+/* https://coolors.co/palette/001427-708d81-f4d58d-bf0603-8d0801 */
+
 :root {
-  --primary: #177e89;
-  --secondary: #084c61;
-  --accent1: #db3a34;
-  --accent2: #ffc857;
+  --primary: #d00000;
+  --secondary: #ffba08;
+  --accent1: #3f88c5;
+  --accent2: #032b43;
+  --accent3: #136f63;
 }
 body {
   font-family:  'Merriwether', sans-serif;
-  min-width: 97px;
+  min-width: 432px;
 }
 
 header {
@@ -32,7 +35,7 @@ h1 {
   margin: 10px;
 }
 header h1 {
-  color: rgb(15, 33, 98);
+  color: var(--accent2);
 }
 
 #hamburger{
@@ -52,7 +55,7 @@ header h1 {
 }
 #hamburger.show::before {
   content: "\2716";
-  color: red;
+  color:  var(--primary);
   font-size: 41.60px;
   padding: 1px;
 }
@@ -68,7 +71,7 @@ header h1 {
 }
 
 nav a {
-  background-color:#468189;
+  background-color:var(--primary);
   color: #ffffff;
   text-align: center;
   padding: 20px;
@@ -80,10 +83,10 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #2980b9;
+  background-color: var(--accent2);
   font-size: 21px;
-  color: var(--accent2);
-  text-decoration: 2px var(--accent2) underline;
+  color: var(--secondary);
+  text-decoration: 2px var(--secondary) underline;
 }
 
 /* Scroll container for current events */
@@ -124,8 +127,8 @@ main {
   font-size: 22px;
   font-weight: bold;
   align-self: center;
-  background-color: var(--secondary);
-  color: #ffffff;
+  background-color: var(--accent2);
+  color: #ffffffff;
   text-decoration: none;
   border-radius: 50px;
   margin: 20px;
@@ -134,7 +137,7 @@ main {
 }
 
 .explore-hero:hover {
-  color: var(--accent2);
+  color: var(--secondary);
   font-size: 20px;
 }
 
@@ -149,7 +152,7 @@ main {
   margin: 20px 0;
   padding: 22px;
   font-size: 23px;
-  background-color: var(--accent2);
+  background-color: var(--primary);
   color: #ffffff;
 }
 
@@ -175,7 +178,7 @@ main {
 .scroll-content div p a {
   text-decoration: none;
   font-size: 18px;
-  color: var(--primary);
+  color: var(--accent1);
 }
 
 .testimonials-section {
@@ -185,11 +188,12 @@ main {
 }
 
 .main-div-testimonials {
-  width: 100%;
+  width: 90%;
   height: 400px;
   overflow-y: scroll;
   overflow-x: hidden;
-  border: 1px solid var(--accent2);
+  border: 1px solid var(--secondary);
+  margin: 10px;
   
 }
 
@@ -202,7 +206,7 @@ main {
 }
 
 .testimonial-scroll-content img {
-  border: 8px solid var(--primary);
+  border: 8px solid var(--accent2);
   border-radius: 50%;
   width: 100px;
   transition: transform .5s;
@@ -228,8 +232,9 @@ main {
 
 /* Form and weather */
 form {
-  background-color: #084c61;
+  background-color: var(--accent2);
   padding: 10px;
+  margin-bottom: -3%;
 }
 
 .form-row label {
@@ -257,17 +262,54 @@ form {
 .weather {
   grid-column: 1/ 2;
   grid-row: 2;
-  background-image: url("../images/weather.jpg");
+  background-color: var(--accent2);
   background-size: cover;
   background-position: center;
   width: 100%;
+  padding: 38px;
+  margin-top: 8%;
+  min-width: 412px;
 }
 
-.weather p{
-  color: #ffffff;
-  font-size: 20px;
-  margin: 20px;
+.search-input {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  position: relative;
+  left: 10%;
+  text-align: center;
 }
+
+.search {
+  height: 40px;
+  height: 40px;
+}
+
+.search img {
+  background-color: #ffffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.search-bar {
+  margin: 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+}
+
+.weather div {
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  margin: 5% 5% 0 0;
+}
+
+
+/* Form */
 
 .form-row {
   display: flex;
@@ -293,8 +335,8 @@ button,
 [type="submit"]{
   width: 97.5%;
   padding: 10px;
-  background-color: var(--accent2);
-  color: black;
+  background-color: var(--secondary);
+  color: #ffffff;
   border-radius: 10px;
   border: none;
   font-size: 24px;
@@ -307,6 +349,8 @@ button:hover,
 
   color: #ffffff;
   cursor: pointer;
+  font-size: 22px;
+  padding: 10.5px;
 }
 
 input::placeholder {
@@ -322,30 +366,35 @@ textarea::placeholder {
 
   padding: 10px;
   margin: 14px 10px 10px 10px;
-  background-color: var(--accent2);
+  background-color: var(--secondary);
+  margin-top: 48%;
+  min-width: 396px;
 }
 
 .spotlight h2 {
   text-align: center;
-  margin: 10px 0;
+  margin: 20px 0;
   color: #ffffff;
   font-size: 26px;
+  font-weight: lighter;
 }
 
 .spotlight p {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 19px;
+  color: #fffffffa;
+  font-weight: 400;
 }
 
 .spotlight div {
-  background-color: var(--secondary);
-  color: #ffffff;
+  background-color: var(--accent2);
+  color: var(--secondary);
   text-align: center;
   padding: 18px;
   font-size: 19px;
   align-self: center;
   width: 150px;
-  margin: 0 auto;
+  margin: 14px auto;
   border-radius: 100px;
   cursor: pointer;
   transition: 3s;
@@ -357,18 +406,18 @@ textarea::placeholder {
 
 .spotlight div a:hover {
 
-  color: var(--accent2);
+  color: #ffffffff;
   font-size: smaller;
 }
 
 /* Footer */
 
 footer {
-  background-color: var(--primary);
-  padding: 40px;
+  background-color: var(--accent2);
+  padding: 50px;
   text-align: center;
   min-width: 379px;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 .div-footer {
   display: grid;
@@ -379,6 +428,7 @@ footer {
 .div-footer .div-a {
  grid-column: 1 / 5;
  grid-row: 1;
+ margin-bottom: 20px;
 }
 
 .div-footer .div-b {
@@ -397,7 +447,7 @@ footer {
   grid-column: 1 / 5;
   display: flex;
   justify-content: space-around;
-  margin: 10px 0;
+  margin: 40px 0;
  }
 
 .social-media a img {
@@ -417,25 +467,25 @@ footer {
 }
 
 .div-footer div {
-  color: var(--accent2);
+  color: #ffffff;
   font-size: 20px;
  
 }
 
 .div-footer a {
-  color: var(--accent2);
+  color: #ffffffff;
   text-decoration: none;
   font-size: 20px;
   transition: 1s;
 }
 .div-footer a:hover {
-  color: #ffffff;
-  text-decoration:  2px solid #ffffff underline;
+  color: var(--secondary);
+  text-decoration:  2px solid var(--secondary) underline;
   font-size: 19px;
 }
 
 #lastModified {
-  color:  var(--accent2);
+  color:  var(--secondary);
   font-size: 22px;
   text-align: center;
 }

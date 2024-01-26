@@ -10,9 +10,8 @@ const current = window.location.href;
   const  show = document.querySelectorAll('nav a');
  show.forEach(function(link){
   if(link.href === current){
-    link.style.backgroundColor = "rgb(46, 117, 179)";
-    link.style.color = "#ffffff";
-    link.style.fontSize = "18px";
+    link.style.backgroundColor = "#032b43";
+    link.style.fontSize = "19px";
   }});
 
 

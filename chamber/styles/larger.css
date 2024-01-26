@@ -120,20 +120,12 @@ nav a:focus {
   font-size: 24px;
   font-weight: bold;
   align-self: center;
-
-  background-color: var(--secondary);
-  color: #ffffff;
   text-decoration: none;
   border-radius: 50px;
   margin: 20px;
   padding: 24px;
   top: -15%;
   transition: 1s;
-}
-
-.explore-hero:hover {
-  color: var(--accent2);
-  font-size: 22px;
 }
 
 /* Testimonials */
@@ -175,7 +167,7 @@ nav a:focus {
   margin: 30px 5px 30px 5px;
   padding: 22px;
   font-size: 30px;
-  background-color: var(--accent2);
+  background-color: var(--primary);
   color: #ffffff;
 }
 
@@ -207,7 +199,7 @@ nav a:focus {
   width: 40%;
   margin: 20px;
   margin-top: 20px;
-  background-color: var(--primary);
+  background-color: var(--accent2);
 }
 
 form {
@@ -242,7 +234,6 @@ button,
 [type="submit"]{
   width: 70%;
   padding: 20px;
-  background-color: var(--accent2);
   color: black;
   border-radius: 100px;
   font-size: 24px;
