@@ -69,6 +69,9 @@ header h1 {
   flex-direction: column;
   min-width: 379px;
 }
+nav {
+  margin: 0;
+}
 
 nav a {
   background-color:var(--primary);
@@ -178,7 +181,7 @@ main {
 .scroll-content div p a {
   text-decoration: none;
   font-size: 18px;
-  color: var(--accent1);
+  color:  #000000;
 }
 
 .testimonials-section {
@@ -336,7 +339,8 @@ button,
   width: 97.5%;
   padding: 10px;
   background-color: var(--secondary);
-  color: #ffffff;
+  color:  #000000;
+  font-weight: bold;
   border-radius: 10px;
   border: none;
   font-size: 24px;
@@ -374,9 +378,9 @@ textarea::placeholder {
 .spotlight h2 {
   text-align: center;
   margin: 20px 0;
-  color: #ffffff;
+  color: #000000;
   font-size: 26px;
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 .spotlight p {
