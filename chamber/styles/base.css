@@ -388,6 +388,7 @@ textarea::placeholder {
   font-size: 19px;
   color: #fffffffa;
   font-weight: 400;
+  line-height: 2;
 }
 
 .spotlight div {
