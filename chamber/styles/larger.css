@@ -348,10 +348,6 @@ footer {
   font-size: 24px;
   transition: 1s;
 }
-.div-footer a:hover {
-  color: var(--accent2);
-  text-decoration:  2px solid var(--accent2) underline;
-}
 
 #lastModified {
   font-size: 22px;
