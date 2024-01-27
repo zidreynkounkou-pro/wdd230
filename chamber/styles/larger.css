@@ -42,14 +42,6 @@ nav a {
   padding: 23px;
 }
 
-nav a:focus {
-  background-color: rgb(46, 117, 179);
-  color: #ffffff;
-  font-size: 18px;
-  outline: none;
-}
-
-
 /* Scroll container for current events */
 
 .hero-scroll-div {
