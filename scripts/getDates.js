@@ -51,3 +51,16 @@ dark.addEventListener('click', () => {
   }
 });
 
+
+
+// Week 03
+const visit = document.querySelector('#visit');
+const time = document.querySelector('#time');
+const now = new Date();
+const day = document.querySelector('#day');
+
+day.innerHTML = `Date: ${now.getMonth() + 1}/${now.getUTCDate()}/${now.getFullYear()}`;
+const hours = now.getHours().toString();
+const minutes = now.getMinutes();
+const seconds = now.getSeconds();
+time.innerHTML =  `Time: ${hours}:${minutes}:${seconds}`;
