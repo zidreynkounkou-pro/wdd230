@@ -20,7 +20,7 @@
 </head>
 <body>
   <header>
-    <img src="images/photo-logo.png" alt="My image logo">
+    <img src="images/photo-logo.webp" alt="My image logo">
     <span>Relga-Zidrey Nkounkou</span>
     <div id="menu"></div>
     <a id="dark" href="#">🕶️</a>
@@ -32,6 +32,13 @@
       <a href="week01/chamber-site-plan.html">Site Plan</a>
       <a href="#">Form</a> 
   </nav>
+
+  <picture>
+    <div>Salt Lake Temple</div>
+    <source media="(max-width: 400px)" srcset="images/small.webp">
+    <source media="(max-width: 960px)" srcset="images/large.webp" loading="lazy">
+    <img src="images/larger.webp" alt="Salt Lake Temple" width="1400" height="650s" loading="lazy">
+  </picture>
 
   <main>
     <h1>WDD 230: Web Frontend Development</h1>
@@ -60,6 +67,16 @@
       </div>
     </section>
   </main>
+
+  <div class="map">
+    <iframe
+   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.7375258200495!2d15.243761363322907!3d-4.
+   27117223643029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a33c812747d05%3A0x81ee36f9b6cc245c!2sDiata!5e0!3m2!1sfr!2scg!4v1706416472799!5m2!1sfr!2scg" 
+     allowfullscreen="" loading="lazy" 
+   referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  </div>
+  
 
   <footer>
     <p class="copyDate">

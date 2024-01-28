@@ -80,4 +80,16 @@ nav {
    position: relative;
    left: -48px;
   }
+
+  picture div {
+    left: 0;
+    top: 400px;
+  }
+}
+
+@media screen and (max-width: 590px){
+  picture div {
+    top: 250px;
+    left: 0px;
+  }
 }
