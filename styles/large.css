@@ -21,11 +21,9 @@ nav {
   nav a {
     display: flex;
     background-color:#468189;
-    color: black;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    transition: 1s;
   }
 
   main {
