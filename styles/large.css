@@ -83,13 +83,18 @@ nav {
 
   picture div {
     left: 0;
-    top: 100%;
+    top: 10px;
+    margin-top: -40%;
   }
 }
 
+
 @media screen and (max-width: 590px){
   picture div {
-    top: 80%;
     left: 0;
   }
+
 }
+
+
+
