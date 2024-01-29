@@ -54,13 +54,30 @@ dark.addEventListener('click', () => {
 
 
 // Week 03
-const visit = document.querySelector('#visit');
 const time = document.querySelector('#time');
 const now = new Date();
 const day = document.querySelector('#day');
 
 day.innerHTML = `Date: ${now.getMonth() + 1}/${now.getUTCDate()}/${now.getFullYear()}`;
-const hours = now.getHours().toString();
+
+/*const hours = now.getHours().toString();
 const minutes = now.getMinutes();
 const seconds = now.getSeconds();
-time.innerHTML =  `Time: ${hours}:${minutes}:${seconds}`;
+time.innerHTML =  `Time: ${hours}:${minutes}:${seconds}`; */
+
+// localStorage
+const visit = document.querySelector('#visit');
+// Check if the 'visits' key exise otherwise, assign it 0.
+let visitNumb = Number(window.localStorage.getItem("visits")) || 0;
+
+if (visitNumb !== 0){
+  visit.innerHTML = `Visits: ${visitNumb}`;
+}
+
+else {
+  visit.innerHTML = 'Hey, welcome! This is your fist visit.'
+}
+// Increment the number of visits by 1.
+visitNumb++;
+//Store the new number of visits.
+window.localStorage.setItem("visits", visitNumb);

@@ -203,17 +203,23 @@ picture source, picture img {
   margin-bottom: -30px;
 }
 
+picture {
+  position: relative;
+
+}  
+
 picture div {
   position: absolute;
   font-weight: bold;
   font-size: 2rem;
-  top: 44%;
+  top: 10px;
+  margin-top: -36%;
   left: auto;
   right: 0;
   padding: 18px;
   white-space: nowrap;
   text-align: center;
-  background-color: rgba(0, 0 , 0, 0.2);
+  background-color: rgba(0, 0 , 0, 0.5);
   color: #ffffff;
   min-width: 446px;
 }
