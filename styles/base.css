@@ -47,9 +47,11 @@ header span {
   min-width: 352px;
 }
 
+/* #468189 */
+
 nav a {
-  background-color:#468189;
-  color: #ffffff;
+  background-color: rgba(0, 0 , 0, 0.88);
+  color: white;
   text-align: center;
   padding: 15px;
   font-size: 22px;
@@ -64,14 +66,14 @@ nav a {
 }
 
 .active {
-  background-color: rgba(23, 126, 137, 0.787);
+ color: white;
 }
 
 nav a:hover{
   
   background-color: #f4e9cd;
   color: #000000;
-  text-decoration: 2px solid black underline;
+  text-decoration: 2px solid rgba(0, 0 , 0, 0.88) underline;
   transition: 2s;
 }
 
@@ -102,7 +104,7 @@ main h1 {
 section h2 {
   padding: 24px;
   color: white;
-  background-color: #468189;
+  background-color: rgba(0, 0 , 0, 0.88);
   font-size: 19px;
   text-align: center;
 }

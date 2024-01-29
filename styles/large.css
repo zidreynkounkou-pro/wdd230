@@ -20,7 +20,6 @@ nav {
 
   nav a {
     display: flex;
-    background-color:#468189;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;

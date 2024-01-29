@@ -44,8 +44,8 @@ dark.addEventListener('click', () => {
     dark.innerHTML = '🕶️';
     h1.style.color = '#33658a';
     main.style.backgroundColor = 'white';
-    h2Ex.style.backgroundColor = '#468189';
-    h2.style.backgroundColor = '#468189';
+    h2Ex.style.backgroundColor = 'rgba(0, 0 , 0, 0.88)';
+    h2.style.backgroundColor = 'rgba(0, 0 , 0, 0.88)';
     main.style.color = 'black';
     
   }
