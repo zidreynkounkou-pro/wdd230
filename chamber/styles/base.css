@@ -97,6 +97,7 @@ nav a:hover {
 main {
   display: grid;
   grid-template-columns: 1fr;
+  min-width: 464px;
 
 }
 .hero-scroll-div {
@@ -271,7 +272,7 @@ form {
   width: 100%;
   padding: 38px;
   margin-top: 8%;
-  min-width: 412px;
+  min-width: 464px;
 }
 
 .search-input {
@@ -372,7 +373,7 @@ textarea::placeholder {
   margin: 14px 10px 10px 10px;
   background-color: var(--primary);
   margin-top: 48%;
-  min-width: 396px;
+  min-width: 464px;
 }
 
 .spotlight h2 {
