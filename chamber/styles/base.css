@@ -9,7 +9,7 @@
 }
 body {
   font-family:  'Merriwether', sans-serif;
-  min-width: 432px;
+  min-width: 479px;
 }
 
 header {
@@ -19,7 +19,7 @@ header {
   justify-content: space-around;
   text-align: center;
   margin: 10px;
-  min-width: 464px;
+  min-width: 259px;
 }
 
 header img {
@@ -62,7 +62,6 @@ header h1 {
 .show {
   display: flex;
   flex-direction: column;
-  min-width: 464px;
 }
 
 .show a {
@@ -98,7 +97,6 @@ nav a:hover {
 main {
   display: grid;
   grid-template-columns: 1fr;
-  min-width: 464px;
 
 }
 .hero-scroll-div {
@@ -273,7 +271,7 @@ form {
   width: 100%;
   padding: 38px;
   margin-top: 8%;
-  min-width: 464px;
+  min-width: 412px;
 }
 
 .search-input {
@@ -374,7 +372,7 @@ textarea::placeholder {
   margin: 14px 10px 10px 10px;
   background-color: var(--primary);
   margin-top: 48%;
-  min-width: 464px;
+  min-width: 396px;
 }
 
 .spotlight h2 {
@@ -423,9 +421,8 @@ footer {
   background-color: var(--accent2);
   padding: 50px;
   text-align: center;
-  min-width: 467px;
+
   margin-top: 24px;
-  min-width: 464px;
 }
 .div-footer {
   display: grid;
