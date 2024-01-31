@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latest Visit Date</title>
+  <style>
+    #sidebar {
+      width: 250px;
+      float: left;
+      margin-right: 20px;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Function to get the current date in the format "YYYY-MM-DD"
+      function getCurrentDate() {
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0'); // Adding 1 because months are zero-based
+        const day = String(now.getDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+      }
+
+      // Function to update and display the latest visit information
+      function updateVisitInformation() {
+        const latestVisitDate = localStorage.getItem('latestVisitDate');
+        const currentDate = getCurrentDate();
+
+        if (latestVisitDate) {
+          const daysBetweenVisits = Math.floor((new Date(currentDate) - new Date(latestVisitDate)) / (1000 * 60 * 60 * 24));
+
+          if (daysBetweenVisits === 0) {
+            // Less than a day
+            document.getElementById('visitMessage').textContent = "Back so soon! Awesome!";
+          } else {
+            // More than a day
+            const message = (daysBetweenVisits === 1) ? `You last visited 1 day ago.` : `You last visited ${daysBetweenVisits} days ago.`;
+            document.getElementById('visitMessage').textContent = message;
+          }
+        } else {
+          // First visit
+          document.getElementById('visitMessage').textContent = "Welcome! Let us know if you have any questions.";
+        }
+
+        // Update and store the latest visit date
+        localStorage.setItem('latestVisitDate', currentDate);
+      }
+
+      // Call the function when the page is loaded
+      updateVisitInformation();
+    });
+  </script>
+</head>
+<body>
+
+  <h2>Welcome to the Website!</h2>
+
+  <div id="sidebar">
+    <h3>Sidebar Content</h3>
+    <p id="visitMessage"></p>
+  </div>
+
+  <!-- Main content goes here -->
+
+</body>
+</html>
