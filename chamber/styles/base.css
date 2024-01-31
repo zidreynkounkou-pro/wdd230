@@ -62,6 +62,7 @@ header h1 {
 .show {
   display: flex;
   flex-direction: column;
+  min-width: 464px;
 }
 
 .show a {
