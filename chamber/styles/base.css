@@ -603,8 +603,16 @@ td:hover, th:hover {
   font-size: 17px;
   padding: 24px;
   line-height: 2;
-  border-radius: 10px;
 }
+
+.nature-cl {
+  background-color: #000000;
+  color: white;
+  line-height: 2;
+  padding: 12px 24px;
+}
+
+
 
 .learn-more {
   padding: 20px;
