@@ -1,0 +1,46 @@
+:root {
+  --primary: #d00000;
+  --secondary: #000;
+}
+
+body {
+  font-size: 20px;
+}
+table {
+  text-align: center;
+  margin: 150px auto;
+  border-collapse: collapse;
+}
+
+table thead tr:first-child th {
+  background-color: var(--primary);
+  color: white;
+}
+
+table thead tr th:nth-child(1) {
+  background-color: var(--primary);
+}
+
+table thead tr th:nth-child(2), 
+table thead tr th:nth-child(3),
+table thead tr th:nth-child(4) {
+  background-color: var(--secondary);
+  color: white;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: gainsboro;
+}
+
+table tbody tr th, table tbody tr td {
+  border: 1px solid var(--secondary);
+}
+th, td {
+  padding: 16px;
+  width: 20%;
+}
+
+caption {
+  caption-side: bottom;
+  margin-top: 10px;
+}
