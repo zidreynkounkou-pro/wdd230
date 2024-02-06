@@ -6,6 +6,7 @@
   <title>Contact Us</title>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/form.css">
   <link rel="stylesheet" href="styles/large.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -25,15 +26,50 @@
       <a href="form.html">Form</a> 
   </nav>
 
-  <form action="">
-    <div>
-      <label for="user_name">Username</label>
-      <input type="text" id="username" name="username" required>
-    </div>
-  </form>
+  <form class="user-form" action="record.html" method="get" onsubmit="return validateForm()">
 
+    <fieldset>
+      <legend>User Registration</legend>
+
+      <div id="emailerror">❌ Please enter a correct email!</div>
+      <div id="passworderror">❌ Your passwords do not much!</div>
+
+      <div class="user-input">
+        <label for="username">User Name:</label>
+        <input type="text" name="username" id="username" placeholder="e.g., username" required>
+      </div>
+
+      <div class="user-input">
+        <label for="password">Password:</label>
+        <input type="password" name="password"  id="password" pattern="^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9]{8,}$" title="Password must contain at least one letter, one digit, and be at least 8 characters long!" required placeholder="e.g., course12">
+      </div>
+
+
+      <div class="user-input">
+        <label for="repeatpassword">Confirm Password:</label>
+        <input type="password" name="repeatpassword" id="repeatpassword" pattern="^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9]{8,}$" title="Password must contain at least one letter, one digit, and be at least 8 characters long and match the password above!" placeholder="e.g., course12" required>
+      </div>
+
+      <div class="user-input">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email with @byui.edu at the end!" placeholder="e.g., example@byui.edu" required>
+      </div>
+
+      
+      <div class="radio-btn">
+        <div>
+          <label for="rate">Rating:</label>
+          <div id="rangevalue">0</div>
+        </div>
+        <input type="range" name="rate" id="rate" min="1" max="10" value="0" step="1">
+      </div>
+      <div class="btn">
+        <input type="submit" value="Register" id="register" class="submitBtn">
+      </div>
   
+    </fieldset>
 
+  </form>
 
 
   <footer>
@@ -43,6 +79,6 @@
     <p class="p2">Relga-Zidrey Nkounkou<strong>&nbsp;Brazzaville</strong> <span><img src="images/flag.png" width="40" alt="Flag" loading="lazy"></span></p>
     <p id="lastModified"></p>
   </footer>
-  <script src="scripts/getDates.js"></script>
+  <script src="scripts/form.js"></script>
 </body>
 </html>

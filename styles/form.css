@@ -1,0 +1,118 @@
+main {
+  min-width: none;;
+}
+
+
+/*------------------Form-----------------------*/
+.user-form {
+  margin: 20px 10%;
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 22px;
+}
+
+.user-form label {
+  cursor: pointer;
+}
+fieldset {
+ /* background-color: #031926; */
+  border-radius: 18px;
+  border: 1px solid steelblue;
+}
+
+.user-form legend {
+  text-align: center;
+  color: #fff;
+  font-size: 21px;
+  padding-top: 10px;
+}
+
+.user-form fieldset .user-input {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.user-form fieldset .user-input label {
+
+  margin-bottom: 2px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.user-form fieldset .user-input input  {
+  padding: .80rem;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: #ffffff;
+}
+
+.user-form fieldset .user-input input:valid {
+  border-bottom: 5px solid green;
+}
+
+.user-form fieldset .user-input input:invalid {
+  border-bottom: 5px solid red;
+}
+
+.user-form fieldset .user-input input:invalid:required {
+  border-bottom: 5px solid red;
+}
+
+.user-form fieldset .user-input input::placeholder {
+  font-size: 18px;
+  color: #000;
+}
+
+.radio-btn {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 150px;
+  margin-left: 18px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.radio-btn input {
+  cursor: pointer;
+}
+
+#rate {
+  margin-top: 8px;
+}
+
+
+.submitBtn {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 12px;
+  min-width: 30%;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: red;
+  color: #ffffff;
+  border: none;
+}
+
+.submitBtn:hover {
+  background-color: rgba(255, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+
+#rangevalue {
+  margin-top: 6px;
+	font-size: 22px;
+	color: #fff;
+}
+
+
+#emailerror, #passworderror {
+  color: red;
+  margin-left: 14px;
+  padding-top: 10px;
+  font-size: 18px;
+  display: none;
+}
