@@ -1,3 +1,11 @@
+:root {
+  --background-color: rgba(0,0,0,0.9);
+  --color: #fff;
+  --font-size-label: 20px;
+  --invalid: red;
+  --valid: green;
+}
+
 main {
   min-width: none;;
 }
@@ -6,7 +14,7 @@ main {
 /*------------------Form-----------------------*/
 .user-form {
   margin: 20px 10%;
-  background-color: rgba(0,0,0,0.9);
+  background-color: var(--background-color);
   border-radius: 22px;
 }
 
@@ -21,7 +29,7 @@ fieldset {
 
 .user-form legend {
   text-align: center;
-  color: #fff;
+  color: var(--color);
   font-size: 21px;
   padding-top: 10px;
 }
@@ -35,8 +43,8 @@ fieldset {
 .user-form fieldset .user-input label {
 
   margin-bottom: 2px;
-  font-size: 20px;
-  color: #fff;
+  font-size: var(--font-size-label);
+  color: var(--color);
 }
 
 .user-form fieldset .user-input input  {
@@ -44,19 +52,19 @@ fieldset {
   width: 100%;
   border-radius: 8px;
   font-size: 18px;
-  background-color: #ffffff;
+  background-color: var(--color);
 }
 
 .user-form fieldset .user-input input:valid {
-  border-bottom: 5px solid green;
+  border-bottom: 5px solid var(--valid);
 }
 
 .user-form fieldset .user-input input:invalid {
-  border-bottom: 5px solid red;
+  border-bottom: 5px solid var(--invalid);
 }
 
 .user-form fieldset .user-input input:invalid:required {
-  border-bottom: 5px solid red;
+  border-bottom: 5px solid var(--invalid);
 }
 
 .user-form fieldset .user-input input::placeholder {
@@ -71,8 +79,8 @@ fieldset {
   width: 150px;
   margin-left: 18px;
   margin-bottom: 20px;
-  font-size: 20px;
-  color: #fff;
+  font-size: var(--font-size-label);
+  color: var(--color);
 }
 
 .radio-btn input {
@@ -89,10 +97,10 @@ fieldset {
   margin-bottom: 30px;
   padding: 12px;
   min-width: 30%;
-  font-size: 20px;
+  font-size: var(--font-size-label);
   border-radius: 10px;
   background-color: red;
-  color: #ffffff;
+  color: var(--color);
   border: none;
 }
 
@@ -105,12 +113,12 @@ fieldset {
 #rangevalue {
   margin-top: 6px;
 	font-size: 22px;
-	color: #fff;
+	color: var(--color);
 }
 
 
 #emailerror, #passworderror {
-  color: red;
+  color: var(--invalid);
   margin-left: 14px;
   padding-top: 10px;
   font-size: 18px;
