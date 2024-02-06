@@ -99,13 +99,14 @@ fieldset {
   min-width: 30%;
   font-size: var(--font-size-label);
   border-radius: 10px;
-  background-color: red;
+  background-color: #9c0707;
   color: var(--color);
   border: none;
+  transition: .4s;
 }
 
 .submitBtn:hover {
-  background-color: rgba(255, 0, 0, 0.6);
+  background-color: rgba(255, 0, 0, 0.8);
   cursor: pointer;
 }
 
