@@ -65,6 +65,7 @@ function validateForm(){
     }
     else {
       emailerror.style.display = 'none'
+      email.style.borderBottomColor = '';
       return true;
     }
   }
@@ -78,6 +79,9 @@ function validateForm(){
     }
     else {
       passworderror.style.display = 'none';
+      password1.style.borderBottomColor = '';
+      password2.style.borderBottomColor = '';
+
       return true;
     }
   }
