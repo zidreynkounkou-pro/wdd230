@@ -6,11 +6,6 @@
   --valid: green;
 }
 
-main {
-  min-width: none;;
-}
-
-
 /*------------------Form-----------------------*/
 .user-form {
   margin: 20px 10%;
