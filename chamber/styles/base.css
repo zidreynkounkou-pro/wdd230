@@ -328,7 +328,6 @@ select {
 }
 
 .level-card {
-  margin-left: 20px;
   grid-row: 2;
 }
 .np-membership, .bronze,

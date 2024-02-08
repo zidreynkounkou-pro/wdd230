@@ -431,6 +431,7 @@ footer {
 .level-card {
   grid-row: 1;
   grid-column: 1;
+  margin-left: 20px;
 }
 
 }
