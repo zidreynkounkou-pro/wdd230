@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page Chamber of Commerce</title>
+  <meta name="author" content="Relga-Zidrey Nkounkou">
+  <meta name="description" content="Brazzaville Chamber of Commerce is a small community that gathers most of the organizations that operate in the city of Brazzaville.
+  We help those companies to advertize their products, 
+  find potential employees and expand their organization throughout 
+  the country through different approches, such as fairs, visuo-conferences ect.">
+  <meta property="og:title" content="Brazzaville Chamber of Commerce">
+  <meta property="og:url" content="https://zidreynkounkou-pro.github.io/wdd230/chamber/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGSPV2Szz0Z32UqHAjk0iMMZRP4qeWK1JFuw&usqp=CAU">
+
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <header>
+    <img src="images/photo.webp" alt="Company logo">
+    <h1>Brazzaville Chamber of Commerce</h1>
+    <div id="hamburger"></div>
+  </header>
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="#">Direcory</a>
+    <a href="join.html">Join</a>
+  </nav>
+
+  <form action="thankyou.html" method="get" class="form-app">
+    <fieldset>
+      <legend>User Application</legend>
+
+      <div class="div-form-app">
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" required>
+      </div>
+  
+      <div class="div-form-app">
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname" required>
+      </div>
+  
+      <div class="div-form-app">
+        <label for="title">Title (optional):</label>
+        <input type="text" name="title" id="title" pattern="^[a-zA-Z- ]{7,}$">
+      </div>
+  
+      <div class="div-form-app">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Must contain any characters followed by an @ sign, followed by more characters, and then a '.' and 2 or more characters from a to z" placeholder="emailexample@gmail.com">
+      </div>
+  
+      <div class="div-form-app">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" required placeholder="+3304857646647">
+      </div>
+  
+      <div class="div-form-app">
+        <label for="organazation">Organization's Name:</label>
+        <input type="text" name="organazation" id="organazation"required>
+      </div>
+  
+      <div class="div-form-app">
+        <label for="level">Membership level:
+          <select name="level" id="level">
+            <option value="">Please select</option>
+            <option value="NP Membership">NP Membership</option>
+            <option value="Bronze Membership">Bronze Membership</option>
+            <option value="Silver Membership">Silver Membership</option>
+            <option value="Gold Membership">Gold Membership</option>
+          </select>
+        </label>
+      </div>
+  
+      <div class="div-form-app">
+        <label for="description">Description:</label>
+        <textarea name="desciption" id="description"></textarea>
+      </div>
+  
+      <div class="div-form-app">
+        <label for="time">Timestamp:</label>
+        <input type="hidden" name="time" id="time">
+      </div>
+      
+      <input type="submit" value="Join Us Now">
+    </fieldset>
+
+    </form>
+  
+  
+  
+  <footer>
+    <div class="div-footer">
+      <div class="div-a">&copy;<span id="date"></span> Relga-Zidrey Nkounkou WDD 230</div>
+      <div class="div-b"><a href="#">Home</a></div>
+      <div class="div-c"><a href="#">Join</a></div>
+      <div class="social-m">
+        <div class="social-media sm-a"><a href="#"><img src="images/whatsapp-a.png" alt="WhatsApp-logo"></a></div>
+        <div class="social-media sm-b"><a href="#"><img src="images/youtube.png" alt="Youtube-logo"></a></div>
+        <div class="social-media sm-c" ><a href="#"><img src="images/facebook.png" alt="Facebook-logo"></a></div>
+      </div>
+    </div>
+    <div id="lastModified"></div>
+  </footer>
+
+  <script src="scripts/chamber.js"></script>
+</body>
+</html>

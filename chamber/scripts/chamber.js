@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () =>{
       }
       else if (latestVisitDate > 1){
         // More than a day
-        visitDate.innerHTML = `You last visited ${latestvisiDate} days ago.`;
+        visitDate.innerHTML = `You last visited ${latestVisitDate} days ago.`;
       }
       
     }
