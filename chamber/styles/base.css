@@ -240,7 +240,8 @@ main {
   margin: 20px 5%;
   padding: 18px;
   border-radius: 20px;
-  background-color: rgba(46, 91, 91, 0.8);
+  background-color: #000;
+ /* background-color: rgba(46, 91, 91, 0.8); */
 }
 .div-form-app {
   display: flex;
@@ -299,6 +300,16 @@ main {
 .form-app fieldset #submit-btn:hover {
   background-color: var(--primary);
 }
+
+.form-app .div-form-app input:required:invalid{
+  border-bottom: 6px solid red;
+}
+
+.form-app .div-form-app input:required:valid {
+  border-bottom: 6px solid green;
+}
+
+
 
 
 
