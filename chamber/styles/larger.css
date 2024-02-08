@@ -415,6 +415,22 @@ footer {
   padding: 10px;
 }
 
+/*-------------------------Join Us Page----------------------------*/
 
+.join-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+
+.form-app {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.level-card {
+  grid-row: 1;
+  grid-column: 1;
+}
 
 }

@@ -37,68 +37,122 @@
     <a href="join.html">Join</a>
   </nav>
 
-  <form action="thankyou.html" method="get" class="form-app">
-    <fieldset>
-      <legend>User Application</legend>
+  <div class="join-card">
 
-      <div class="div-form-app">
-        <label for="lastname">Last Name:</label>
-        <input type="text" name="lastname" id="lastname" required>
-      </div>
-  
-      <div class="div-form-app">
-        <label for="firstname">First Name:</label>
-        <input type="text" name="firstname" id="firstname" required>
-      </div>
-  
-      <div class="div-form-app">
-        <label for="title">Title (optional):</label>
-        <input type="text" name="title" id="title" pattern="^[a-zA-Z- ]{7,}$">
-      </div>
-  
-      <div class="div-form-app">
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Must contain any characters followed by an @ sign, followed by more characters, and then a '.' and 2 or more characters from a to z" placeholder="emailexample@gmail.com">
-      </div>
-  
-      <div class="div-form-app">
-        <label for="phone">Phone Number:</label>
-        <input type="tel" name="phone" id="phone" required placeholder="+3304857646647">
-      </div>
-  
-      <div class="div-form-app">
-        <label for="organazation">Organization's Name:</label>
-        <input type="text" name="organazation" id="organazation"required>
-      </div>
-  
-      <div class="div-form-app">
-        <label for="level">Membership level:
-          <select name="level" id="level">
-            <option value="">Please select</option>
-            <option value="NP Membership">NP Membership</option>
-            <option value="Bronze Membership">Bronze Membership</option>
-            <option value="Silver Membership">Silver Membership</option>
-            <option value="Gold Membership">Gold Membership</option>
-          </select>
-        </label>
-      </div>
-  
-      <div class="div-form-app">
-        <label for="description">Description:</label>
-        <textarea name="desciption" id="description"></textarea>
-      </div>
-  
-      <div class="div-form-app">
-        <label for="time">Timestamp:</label>
-        <input type="hidden" name="time" id="time">
-      </div>
-      
-      <input type="submit" value="Join Us Now" id="submit-btn">
-    </fieldset>
+    <div class="level-card">
+      <section class="np-membership">
+        <h2>NP Membership</h2>
+        <p>For the NP membership level, you will not be charged anything. However, you have limit access to our offers.</p>
+        <h3>Benefit</h3>
+        <p>For the NP membership, you only benefit for the advertising. You could by the way post spotlights and adverstize your products from us. We hope you will try the more advance levels. Enjoy your community!</p>
+      </section>
 
-    </form>
+      <section class="bronze">
+        <h2>Bronze Membership</h2>
+        <p>For the Bronze Membership, you will be charged some dollars. Fortunatly, benefit more than the NP Memb.</p>
+        <h3>Benefits</h3>
+        <p class="br-para">
+          <ul>
+          <li>Spotlights</li>
+          <li>Advertizing</li>
+          <li>Traning</li>
+          </ul>
+          <p class="price"><strong>Price: $250/month</strong></p>
+        </p>
+      </section>
+
+      <section class="silver">
+        <h2>Silver Membership</h2>
+        <h3>Benefits</h3>
+        <p class="sl-para">
+        <ul>
+          <li>Spotlights</li>
+          <li>Advertizing</li>
+          <li>Traning</li>
+          <li>Special events</li>
+        </ul>
+        <p class="price"><strong>Price: $500/month</strong></p>
+        </p>
+      </section>
+
+      <section class="gold">
+        <h2>Gold Membership</h2>
+        <h3>Benefits</h3>
+        <p class="sl-para">
+        <ul>
+          <li>Spotlights</li>
+          <li>Advertizing</li>
+          <li>Traning</li>
+          <li>Special events</li>
+          <li>Discount events</li>
+          <li>Free Sessions</li>  
+        </ul>
+        <p class="price"><strong>Price: $650/month</strong></p>
+        </p>
+      </section>
+    </div>
+
+    <form action="thankyou.html" method="get" class="form-app">
+      <fieldset>
+        <legend>User Application</legend>
   
+        <div class="div-form-app">
+          <label for="lastname">Last Name:</label>
+          <input type="text" name="lastname" id="lastname" required>
+        </div>
+    
+        <div class="div-form-app">
+          <label for="firstname">First Name:</label>
+          <input type="text" name="firstname" id="firstname" required>
+        </div>
+    
+        <div class="div-form-app">
+          <label for="title">Title (optional):</label>
+          <input type="text" name="title" id="title" pattern="^[a-zA-Z- ]{7,}$">
+        </div>
+    
+        <div class="div-form-app">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Must contain any characters followed by an @ sign, followed by more characters, and then a '.' and 2 or more characters from a to z" placeholder="emailexample@gmail.com">
+        </div>
+    
+        <div class="div-form-app">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" name="phone" id="phone" required placeholder="+3304857646647">
+        </div>
+    
+        <div class="div-form-app">
+          <label for="organazation">Organization's Name:</label>
+          <input type="text" name="organazation" id="organazation"required>
+        </div>
+    
+        <div class="div-form-app">
+          <label for="level">Membership level:
+            <select name="level" id="level">
+              <option value="">Please select</option>
+              <option value="NP Membership">NP Membership</option>
+              <option value="Bronze Membership">Bronze Membership</option>
+              <option value="Silver Membership">Silver Membership</option>
+              <option value="Gold Membership">Gold Membership</option>
+            </select>
+          </label>
+        </div>
+    
+        <div class="div-form-app">
+          <label for="description">Description:</label>
+          <textarea name="desciption" id="description"></textarea>
+        </div>
+    
+        <div class="div-form-app">
+          <label for="time">Timestamp:</label>
+          <input type="hidden" name="time" id="time">
+        </div>
+        
+        <input type="submit" value="Join Us Now" id="submit-btn">
+      </fieldset>
   
+      </form>
+  </div>
   
   <footer>
     <div class="div-footer">

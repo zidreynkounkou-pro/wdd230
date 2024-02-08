@@ -293,8 +293,13 @@ main {
   margin: 14px 14%;
   padding: 18px;
   font-size: 20px;
-  border-radius: 8px;
+  border-radius: 20px;
   transition: .3s;
+}
+select {
+  background-color: #fff;
+  color: #000;
+  font-size: 17px;
 }
 
 .form-app fieldset #submit-btn:hover {
@@ -310,6 +315,88 @@ main {
 }
 
 
+/*------------------------Levels-------------------------*/
+
+.join-card {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.form-app {
+  grid-row: 1;
+}
+
+.level-card {
+  margin-left: 20px;
+  grid-row: 2;
+}
+.np-membership, .bronze,
+.silver, .gold {
+  margin: 10px 10px 0 10px;
+  padding: 8px;
+}
+.np-membership h3, .np-membership h2,
+ .bronze h2, .bronze h3, .silver h3, .silver h2,
+ .gold h2, .gold h3 {
+  background-color: var(--accent2);
+  color: var(--secondary);
+  text-align: center;
+  padding: 6px;
+}
+
+ .np-membership p,
+ .bronze p, .silver p,
+ .gold p {
+  font-size: 16px;
+ }
+.np-membership p {
+  padding: 6px;
+  margin: 10px;
+}
+
+.bronze p:not(.br-para) {
+  padding: 10px;
+  text-align: center;
+}
+
+.silver {
+ margin-top: -20px;
+}
+
+.bronze ul {
+  margin-top: 8px;
+}
+.bronze ul li {
+  margin-left: 20px;
+}
+
+
+.silver h3 {
+  margin-top: 6px;
+}
+
+.silver ul, .gold ul {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.gold p {
+  text-align: center;
+}
+.gold h3 {
+  margin-top: 8px;
+}
+
+.gold p, .silver p,
+.bronze p {
+  text-align: center;
+}
+
+.gold ul li, .silver ul li,
+.bronze ul li {
+  padding: 1px;
+  font-weight: bold;
+}
 
 
 
