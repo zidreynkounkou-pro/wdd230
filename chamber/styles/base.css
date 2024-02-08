@@ -247,10 +247,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 14px;
+  margin: 16px;
 }
 
 .form-app fieldset {
+  padding: 10px;
   border-radius: 14px;
  
 }
@@ -290,7 +291,7 @@ main {
   background-color: #d000009f;;
   color: #fff;;
   width: 72%;
-  margin: 14px 14%;
+  margin: -4px 14% 14px 14%;
   padding: 18px;
   font-size: 20px;
   border-radius: 20px;
@@ -347,7 +348,7 @@ select {
  .np-membership p,
  .bronze p, .silver p,
  .gold p {
-  font-size: 16px;
+  font-size: 1.05rem;
  }
 .np-membership p {
   padding: 6px;
