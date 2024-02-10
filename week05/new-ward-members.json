@@ -1,0 +1,24 @@
+{
+  "family-name": "Hugor",
+  "date-moved": 2022,
+  "people": 4,
+  "visted": true,
+  "family": [
+    {
+      "name": "Rebecca",
+      "gender": "female",
+      "birthdate": "08-25-1984"
+    },
+    {
+      "name": "John",
+      "gender": "male",
+      "birthdate": "02-22-2010"
+    },
+    {
+      "name": "Sahara",
+      "gender": "female",
+      "birthdate": "05-01-2007"
+    }
+
+  ]
+}
