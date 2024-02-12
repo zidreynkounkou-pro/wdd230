@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+h1 {
+  padding: 10px;
+  margin: 0;
+  color: #FFFF99;
+  background-color: rgba(0, 0, 0, 0.8);;
+  text-align: center;
+}
+
+main p {
+  text-align: center;
+  font-size: 1.8rem;
+  color: navy;
+  padding: 10px;
+}
+
+figure {
+  text-align: center;
+}
+img {
+  width: 100px;
+}
+
+figcaption {
+  color: navy;
+  font-size: 1.4rem;
+}
+
+footer {
+  margin: 0;
+  padding: 50px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #FFFF99;
+  background-color: rgba(0, 0, 0, 0.8);
+}
