@@ -81,3 +81,42 @@ else {
 visitNumb++;
 //Store the new number of visits.
 window.localStorage.setItem("visits", visitNumb);
+
+// Week 5
+const currentWeatherTemp = document.querySelector('#current-temp');
+const iconCondition = document.querySelector('#current-weather-icon')
+const weatherDescription = document.querySelector('#weather-description');
+const lat = -4.28;
+const lon = 15.27;
+
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=cdea931d4505dc792d1413a8ff31e208`;
+
+// Fetch the API
+async function apiFetch() {
+  try {
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data);
+      displayResults(data);
+    } else {
+        throw Error(await response.text());
+    }
+  } catch (error) {
+      console.log(error);
+  }
+}
+
+apiFetch();
+
+// Display the results
+function displayResults(data) {
+  const temp = `${data.main.temp}`;
+  currentWeatherTemp.innerHTML = `${temp}&deg;F`;
+  const src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let description = data.weather[0].description;
+  iconCondition.setAttribute('alt', 'current weather icon in Brazzaville.');
+  iconCondition.setAttribute('loading', 'lazy');
+  iconCondition.setAttribute('src', src);
+  weatherDescription.textContent = description;
+}
