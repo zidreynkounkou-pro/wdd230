@@ -8,7 +8,7 @@
           "title": "Layout"
         },
         {
-          "url": "week01/media-query.htm",
+          "url": "week01/media-query.html",
           "title": "Media Queries"
         },
         {
@@ -30,7 +30,7 @@
       },
       {
         "url": "week02/bom.html",
-        "title": "DOM"
+        "title": "BOM"
       }
      ]
     },
