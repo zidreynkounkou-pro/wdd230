@@ -25,6 +25,7 @@ function displayLinks(weeks) {
   weeks.weeks.forEach(week => {
     const weekNumber = week.week;
     const li = document.createElement('li');
+    li.textContent = `${weekNumber}: `;
     const weekLinks = document.createElement('span');
     week.links.forEach((link, index) => {
       const url = link.url;
@@ -37,7 +38,7 @@ function displayLinks(weeks) {
         weekLinks.appendChild(document.createTextNode(' | '));
       }
     });
-    li.textContent = `${weekNumber}: `;
+    
     li.appendChild(weekLinks);
     ul.appendChild(li);
   });
