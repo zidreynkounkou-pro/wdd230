@@ -18,21 +18,21 @@
       ]
     },
     {
-     "week": "Week 2",
-     "links":  [
-      {
-        "url": "week02/design.html",
-        "title": "Design Principles"
-      },
-      {
-        "url": "https://codepen.io/Zidrey-NKOUNKOU/pen/zYbwMeQ",
-        "title": "JsPen"
-      },
-      {
-        "url": "week02/bom.html",
-        "title": "BOM"
-      }
-     ]
+      "week": "Week 2",
+      "links": [
+        {
+          "url": "week02/design.html",
+          "title": "Design Principles"
+        },
+        {
+          "url": "https://codepen.io/Zidrey-NKOUNKOU/pen/zYbwMeQ",
+          "title": "JsPen"
+        },
+        {
+          "url": "week02/bom.html",
+          "title": "BOM"
+        }
+      ]
     },
     {
       "week": "Week 3",
@@ -46,12 +46,10 @@
           "title": "Lazy Loading"
         },
         {
-          
           "url": "week03/responsive-images.html",
           "title": "Responsive Images"
         },
         {
-          
           "url": "week03/bom.html",
           "title": "LocalStorage"
         }
@@ -73,8 +71,8 @@
           "title": "HTML Tables"
         },
         {
-          "url": "HTML Forms",
-          "title": "week04/form-start/form-start/index.html"
+          "url": "week04/form-start/form-start/index.html",
+          "title": "HTML Forms"
         }
       ]
     },
