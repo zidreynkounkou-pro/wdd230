@@ -84,8 +84,9 @@ window.localStorage.setItem("visits", visitNumb);
 
 // Week 5
 const currentWeatherTemp = document.querySelector('#current-temp');
-const iconCondition = document.querySelector('#current-weather-icon')
 const weatherDescription = document.querySelector('#weather-description');
+const img = document.createElement('img');
+const weather = document.querySelector('.weather');
 const lat = -4.28;
 const lon = 15.27;
 
@@ -114,8 +115,9 @@ function displayResults(data) {
   currentWeatherTemp.innerHTML = `${temp}&deg;F`;
   const src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   let description = data.weather[0].description;
-  iconCondition.setAttribute('alt', 'current weather icon in Brazzaville.');
-  iconCondition.setAttribute('loading', 'lazy');
-  iconCondition.setAttribute('src', src);
+  img.setAttribute('alt', 'current weather icon in Brazzaville.');
+  img.setAttribute('loading', 'lazy');
+  img.setAttribute('src', src);
+  weather.appendChild(img);
   weatherDescription.textContent = description;
 }
