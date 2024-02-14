@@ -19,10 +19,10 @@ getLinks();
 
 
 
-function displayLinks(data) {
+function displayLinks(weeks) {
   const ul = document.querySelector('ul');
 
-  data.weeks.forEach(week => {
+  weeks.weeks.forEach(week => {
     const weekNumber = week.week;
     const li = document.createElement('li');
     const weekLinks = document.createElement('span');
