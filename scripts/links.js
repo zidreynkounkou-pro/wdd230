@@ -31,8 +31,10 @@ function displayLinks(weeks) {
       const url = link.url;
       const title = link.title;
       const a = document.createElement('a');
-      a.href = url;
-      a.textContent = title;
+      a.setAttribute('href', url);
+      a.innerHTML = title;
+      
+      
       weekLinks.appendChild(a);
       if (index !== week.links.length - 1) {
         weekLinks.appendChild(document.createTextNode(' | '));
