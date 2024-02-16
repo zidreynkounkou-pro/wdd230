@@ -6,7 +6,7 @@
       "phone": "+242 06899488403" ,
       "url": "https://www.lepratiqueducongo.com/annuaire/agence-sud-congo-2/",
       "membership": "Silver Membership",
-      "Domain": "Security",
+      "domain": "Security",
       "logo": "https://www.lepratiqueducongo.com/wp-content/uploads/2017/04/logotype.png"
     },
     {
@@ -15,7 +15,7 @@
       "phone": "+242 064558589" ,
       "url": "www.mamb-services.net",
       "membership": "Bronze Membership",
-      "Domain": "Network",
+      "domain": "Network",
       "logo": "https://mamb-services.net/wp-content/uploads/2018/05/MA.png"
     },
     {
@@ -24,7 +24,7 @@
       "phone": "+242 06748498484" ,
       "url": "www.mtn.cg",
       "membership": "Gold Membership",
-      "Domain": "Communication",
+      "domain": "Communication",
       "logo": "https://www.mtn.cg/wp-content/themes/mtn-theme-child/mtn-logo-nav.svg"
     },
     {
@@ -33,7 +33,7 @@
       "phone": "+242 06748484954" ,
       "url": "www.congotelecom.cg",
       "membership": "Gold Membership",
-      "Domain": "Network and Communication",
+      "domain": "Network and Communication",
       "logo": "https://www.congotelecom.cg/assets/images/logos/logo.png"
     },
     {
@@ -42,7 +42,7 @@
       "phone": "+242 053950666" ,
       "url": "www.bralico-congo.com",
       "membership": "Gold Membership",
-      "Domain": "Drink",
+      "domain": "Drink",
       "logo": "https://bralico-congo.com/wp-content/uploads/2024/01/NOUVEAU_LOGO-BRALICO-01.png"
     },
     {
@@ -51,7 +51,7 @@
       "phone": "+242 067876663" ,
       "url": "www.btp-congo.com",
       "membership": "Silver Membership",
-      "Domain": "Construction",
+      "domain": "Construction",
       "logo": "https://www.btp-congo.com/images/logo-btp-congo.png"
     },
     {
@@ -60,7 +60,7 @@
       "phone": "+242 4242" ,
       "url": "www.e2c.cg",
       "membership": "Gold Membership",
-      "Domain": "Power",
+      "domain": "Power",
       "logo": "https://e2c.cg/wp-content/uploads/2022/10/cropped-logoE2c.png"
     },
     {
@@ -69,7 +69,7 @@
       "phone": "+242 06788498080" ,
       "url": "www.airtel.cg",
       "membership": "Gold Membership",
-      "Domain": "Network",
+      "domain": "Network",
       "logo": "https://www.airtel.cg/assets/images/airtel-logo.png"
     }
   ]
