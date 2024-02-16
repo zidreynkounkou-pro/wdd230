@@ -434,4 +434,21 @@ footer {
   margin-left: 20px;
 }
 
+
+/*---------------------- Directory.html -------------------------*/
+
+
+.dir-cards {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dir-cards section {
+  transition: transform .3s;
+}
+
+.dir-cards section:hover {
+  transform: scale(1.03);
+}
+
+
 }

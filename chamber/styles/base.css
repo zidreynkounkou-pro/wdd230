@@ -804,6 +804,47 @@ td:hover, th:hover {
 
 
 
+/*------------------------------Directory.html-----------------------------*/
+
+.dir-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 8px;
+  margin: 8px;
+  text-align: center;
+}
+
+
+
+.dir-cards h2 {
+  margin-bottom: -2px;
+  margin-top: 14px;
+  color: var(--secondary);
+}
+
+.dir-cards img {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.dir-cards section {
+  margin: 8px;
+  border: 2px solid steelblue;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 4px grey;
+}
+
+.dir-cards section li {
+  margin: 10px;
+  color: var(--primary);
+}
+
+
+
+
+
 
 
 

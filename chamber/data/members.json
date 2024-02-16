@@ -1,0 +1,76 @@
+{
+  "members": [
+    {
+      "name": "AGENCE SUD CONGO",
+      "address": "Av. du Général de Gaulle",
+      "phone": "+242 06899488403" ,
+      "url": "https://www.lepratiqueducongo.com/annuaire/agence-sud-congo-2/",
+      "membership": "Silver Membership",
+      "Domain": "Security",
+      "logo": "https://www.lepratiqueducongo.com/wp-content/uploads/2017/04/logotype.png"
+    },
+    {
+      "name": "Mamb Service",
+      "address": "150 Allee des Manguiers Centre Ville",
+      "phone": "+242 064558589" ,
+      "url": "www.mamb-services.net",
+      "membership": "Bronze Membership",
+      "Domain": "Network",
+      "logo": "https://mamb-services.net/wp-content/uploads/2018/05/MA.png"
+    },
+    {
+      "name": "MTN",
+      "address": "30e av, Centre Ville",
+      "phone": "+242 06748498484" ,
+      "url": "www.mtn.cg",
+      "membership": "Gold Membership",
+      "Domain": "Communication",
+      "logo": "https://www.mtn.cg/wp-content/themes/mtn-theme-child/mtn-logo-nav.svg"
+    },
+    {
+      "name": "Congo Telecom",
+      "address": "10e av, La Corniche",
+      "phone": "+242 06748484954" ,
+      "url": "www.congotelecom.cg",
+      "membership": "Gold Membership",
+      "Domain": "Network and Communication",
+      "logo": "https://www.congotelecom.cg/assets/images/logos/logo.png"
+    },
+    {
+      "name": "Bralico",
+      "address": "246, rue Kindambangouedi P/N",
+      "phone": "+242 053950666" ,
+      "url": "www.bralico-congo.com",
+      "membership": "Gold Membership",
+      "Domain": "Drink",
+      "logo": "https://bralico-congo.com/wp-content/uploads/2024/01/NOUVEAU_LOGO-BRALICO-01.png"
+    },
+    {
+      "name": "BTP Congo",
+      "address": "94 Rue Tchiakou KM4 P/N",
+      "phone": "+242 067876663" ,
+      "url": "www.btp-congo.com",
+      "membership": "Silver Membership",
+      "Domain": "Construction",
+      "logo": "https://www.btp-congo.com/images/logo-btp-congo.png"
+    },
+    {
+      "name": "E2C",
+      "address": "93 Av. de l’Indépendance, Brazzaville",
+      "phone": "+242 4242" ,
+      "url": "www.e2c.cg",
+      "membership": "Gold Membership",
+      "Domain": "Power",
+      "logo": "https://e2c.cg/wp-content/uploads/2022/10/cropped-logoE2c.png"
+    },
+    {
+      "name": "Airtel Congo",
+      "address": "40e av, La Gare",
+      "phone": "+242 06788498080" ,
+      "url": "www.airtel.cg",
+      "membership": "Gold Membership",
+      "Domain": "Network",
+      "logo": "https://www.airtel.cg/assets/images/airtel-logo.png"
+    }
+  ]
+}
