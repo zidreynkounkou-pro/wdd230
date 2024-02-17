@@ -83,6 +83,7 @@ function displayMembers(data){
     const liDomain = document.createElement('li');
     const liMembership = document.createElement('li');
     const liUrl = document.createElement('li');
+    const a = document.createElement('a');
 
     const name = member.name;
     const address = member.address;
@@ -97,7 +98,7 @@ function displayMembers(data){
     liPhone.textContent = `Phone: ${phone}`;
     liDomain.textContent = `Domain: ${domain}`;
     liMembership.textContent = `Membership Level: ${membership}`;
-    liUrl.textContent = `Website's url: ${url}`;
+    liUrl.innerHTML = `<strong>Website's url: ${url}</strong>`;
     img.setAttribute('src', logo);
     img.setAttribute('alt', `${name} logo`);
 
