@@ -28,7 +28,6 @@ const button = document.querySelector('#hamburger');
 function toggleNav() {
   nav.classList.toggle('show');
   button.classList.toggle('show');
-  console.log('Button clicked');
 }
 
 button.addEventListener('click', toggleNav);
@@ -55,14 +54,11 @@ window.addEventListener('resize', checkWindowWidth);
 // ------------------Directory page------------------------
 
 const jsonUrl = 'https://zidreynkounkou-pro.github.io/wdd230/chamber/data/members.json';
-
-
-
 async function fetchMembers() {
   try {
     const response = await fetch(jsonUrl);
     if (response.ok) {
-      const data = response.json();
+      const data = await response.json();
       displayMembers(data);
     } else {
         throw Error(await response.text());
@@ -75,17 +71,64 @@ fetchMembers();
 
 function displayMembers(data){
   const mainDiv = document.querySelector('.dir-cards');
-  const div = document.createElement('div');
-  const h2 = document.createElement('h2');
-  const img = document.createElement('img');
-  const ul = document.createElement('ul');
-  const li = document.createElement('li');
 
-  data.members.forEach((member) =>{
+  data.members.forEach(member => {
+    const div = document.createElement('div');
+    const secondDiv = document.createElement('div')
+    const h2 = document.createElement('h2');
+    const img = document.createElement('img');
+    const ul = document.createElement('ul');
+    const liAddress = document.createElement('li');
+    const liPhone = document.createElement('li');
+    const liDomain = document.createElement('li');
+    const liMembership = document.createElement('li');
+    const liUrl = document.createElement('li');
+
     const name = member.name;
     const address = member.address;
     const logo = member.logo;
     const membership = member.membership;
     const phone = member.phone;
-  })
+    const url = member.url;
+    const domain = member.domain;
+
+    h2.textContent = name;
+    liAddress.textContent = `Address: ${address}`;
+    liPhone.textContent = `Phone: ${phone}`;
+    liDomain.textContent = `Domain: ${domain}`;
+    liMembership.textContent = `Membership Level: ${membership}`;
+    liUrl.textContent = `Website's url: ${url}`;
+    img.setAttribute('src', logo);
+    img.setAttribute('alt', `${name} logo`);
+
+    div.setAttribute('class', 'first-div')
+    secondDiv.setAttribute('class', 'second-div')
+    secondDiv.appendChild(h2);
+    secondDiv.appendChild(img);
+    div.appendChild(secondDiv);
+    ul.appendChild(liAddress);
+    ul.appendChild(liPhone);
+    ul.appendChild(liDomain);
+    ul.appendChild(liMembership);
+    ul.appendChild(liUrl);
+    div.appendChild(ul);
+    mainDiv.appendChild(div);
+
+    
+  });
 }
+
+
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+const displayImg = document.querySelector('.dir-cards'); //".dir-cards"
+
+listButton.addEventListener("click", () => {
+	displayImg.classList.add('dir');
+  displayImg.style.display = 'block';
+}); 
+
+gridButton.addEventListener('click', () => {
+  displayImg.style.display = '';
+ displayImg.classList.remove('dir');
+});

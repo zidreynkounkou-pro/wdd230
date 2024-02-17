@@ -3,8 +3,8 @@
     {
       "name": "AGENCE SUD CONGO",
       "address": "Av. du Général de Gaulle",
-      "phone": "+242 06899488403" ,
-      "url": "https://www.lepratiqueducongo.com/annuaire/agence-sud-congo-2/",
+      "phone": "+242 06899488403",
+      "url": "www.lepratiqueducongo.com/annuaire/agence-sud-congo-2/",
       "membership": "Silver Membership",
       "domain": "Security",
       "logo": "https://www.lepratiqueducongo.com/wp-content/uploads/2017/04/logotype.png"
@@ -12,16 +12,16 @@
     {
       "name": "Mamb Service",
       "address": "150 Allee des Manguiers Centre Ville",
-      "phone": "+242 064558589" ,
+      "phone": "+242 064558589",
       "url": "www.mamb-services.net",
       "membership": "Bronze Membership",
       "domain": "Network",
       "logo": "https://mamb-services.net/wp-content/uploads/2018/05/MA.png"
     },
     {
-      "name": "MTN",
+      "name": "MTN Congo",
       "address": "30e av, Centre Ville",
-      "phone": "+242 06748498484" ,
+      "phone": "+242 06748498484",
       "url": "www.mtn.cg",
       "membership": "Gold Membership",
       "domain": "Communication",
@@ -30,7 +30,7 @@
     {
       "name": "Congo Telecom",
       "address": "10e av, La Corniche",
-      "phone": "+242 06748484954" ,
+      "phone": "+242 06748484954",
       "url": "www.congotelecom.cg",
       "membership": "Gold Membership",
       "domain": "Network and Communication",
@@ -48,7 +48,7 @@
     {
       "name": "BTP Congo",
       "address": "94 Rue Tchiakou KM4 P/N",
-      "phone": "+242 067876663" ,
+      "phone": "+242 067876663",
       "url": "www.btp-congo.com",
       "membership": "Silver Membership",
       "domain": "Construction",
@@ -65,8 +65,8 @@
     },
     {
       "name": "Airtel Congo",
-      "address": "40e av, La Gare",
-      "phone": "+242 06788498080" ,
+      "address": "40e av, La Gare - Brazzaville",
+      "phone": "+242 06788498080",
       "url": "www.airtel.cg",
       "membership": "Gold Membership",
       "domain": "Network",
