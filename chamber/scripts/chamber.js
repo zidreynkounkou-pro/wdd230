@@ -52,159 +52,147 @@ function checkWindowWidth() {
 window.addEventListener('resize', checkWindowWidth);
 
 
-// Canlendar
+//------------------Home Page Banner---------------------------
 
+function closeBanner(){
+  document.querySelector('#chamber-banner').style.display = 'none';
+}
 
-function calendarBody(){
+// Find the applicable day
 
-  const calenBody = document.querySelector('.table-body');
-  const today = new Date();
-  const currentYear = today.getFullYear();
-  const thisDay = today.getDate();
-  const month = today.getMonth();
-  const daysInMonth = new Date(currentYear, month + 1, 0).getDate();
-  const firstDay = new Date(currentYear, month, 1).getDay()
-  const monthClass = document.querySelector('.month');
-  const year = document.querySelector('.year');
+function isApplicableDay(){
+  const day = new Date();
+  const dayOfWeek = day.getDay();
+  return dayOfWeek >= 1 && dayOfWeek <= 3;
+}
 
+// Check if the day is applicable, then show the banner
 
-  if(month === 0)
-  {
-    monthClass.innerHTML = 'Jan.';
+window.onload = function() {
+  const banner = document.querySelector('#chamber-banner');
+  if (isApplicableDay()){
+    banner.style.display = 'flex';
   }
-  else if (month === 1){
-    monthClass.innerHTML = 'Feb.';
-  }
-  else if (month === 2) {
-    monthClass.innerHTML = 'Mar.';
-  }
-  else if (month === 3){
-    monthClass.innerHTML = 'Apr.';
-  }
-  else if (month === 4) {
-    monthClass.innerHTML = 'May.';
-  }
-  else if (month === 5){
-    monthClass.innerHTML = 'Jun.';
-  }
-  else if (month === 6) {
-    monthClass.innerHTML = 'Jul.';
-  }
-  else if (month === 7){
-    monthClass.innerHTML = 'Aug.';
-  }
-  else if (month === 8) {
-    monthClass.innerHTML = 'Sep.';
-  }
-  else if (month === 9){
-    monthClass.innerHTML = 'Oct.';
-  }
-  else if (month === 10) {
-    monthClass.innerHTML = 'Nov.';
-  }
-  else if (month === 11) {
-    monthClass.innerHTML = 'Dec.';
+  else {
+    banner.style.display = 'none';
   }
 
-  year.innerHTML = currentYear;
-
-  calenBody.innerHTML = "";
-
-  let dayCount = 1;
-
-  for(let i = 0; i < 5; i++){
-  const row = document.createElement('tr');
-  
-  for(let j = 0; j < 7; j++){
-    const cell = document.createElement('td');
-
-
-    /*  The firstDay variable represents the day of the week (0 to 6, where 0 is Sunday)
-     on which the first day of the month falls.
-      If the current cell is before the first day of the month,
-     it means it should be an empty cell. */
-
-    // if the value of dayCount (which represents the day of the month) 
-    //has exceeded the total number of days in the current month (daysInMonth). 
-    //If dayCount is greater than daysInMonth, 
-    //it means we have already filled in all the days of the current month, 
-    //and the remaining cells should be empty.
-
-    if ((i === 0 && j < firstDay) || dayCount > daysInMonth){
-    // Empty cells before the first day and the last day.
-      cell.textContent = "";
-    }
-  else{
-
-    cell.textContent = dayCount;
-
-    if(dayCount === thisDay)
-    {
-      cell.classList.add("currentDay");
-    
-    }
-
-    dayCount++;
-  }
-
-  row.appendChild(cell);
-
-  }
-  
-  calenBody.appendChild(row);
 }
 
 
+///////////////////////////////////////////////////////////////////////
+const lat = -4.28;
+const lon = 15.27;
+
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=cdea931d4505dc792d1413a8ff31e208`;
+const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=cdea931d4505dc792d1413a8ff31e208`;
+
+// Fetch the API
+async function apiFetch() {
+  try {
+    const response = await fetch(url);
+    const responseForecast = await fetch(urlForecast);
+    if (response.ok && responseForecast.ok) {
+      const data = await response.json();
+      const dataForecast = await responseForecast.json();
+      console.log(dataForecast);
+      console.log(data);
+      displayResults(data, dataForecast);
+    } else {
+        throw Error(await response.text());
+    }
+  } catch (error) {
+      console.log(error);
+  }
 }
 
-calendarBody();
+apiFetch();
+
+// Display the results for the current weather
+function displayResults(data, dataForecast) {
+
+  const currentWeatherTemp = document.createElement('div');
+  const imgDiv = document.createElement('div');
+  const weatherDescription = document.createElement('div');
+  const img = document.querySelector('img');
+  const weather = document.querySelector('.weather');
 
 
+  const temp = `${data.main.temp}`;
+  currentWeatherTemp.innerHTML = `${temp}&deg;C`;
+  const src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let description = data.weather[0].description;
+  img.setAttribute('alt', 'current weather icon in Brazzaville.');
+  img.setAttribute('loading', 'lazy');
+  img.setAttribute('src', src);
 
-// LocalStorage for visits
+  weather.appendChild(currentWeatherTemp);
+  imgDiv.appendChild(img);
+  weather.appendChild(imgDiv);
+  weatherDescription.textContent = description.charAt(0).toUpperCase() + description.slice(1);
+  weather.appendChild(weatherDescription);
 
-document.addEventListener("DOMContentLoaded", () =>{
-  function getCurrentDate(){
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = String(now.getMonth() + 1).padStart(2, '0');
-    const day = String(now.getDate()).padStart(2, '0');
-    return `${month}-${day}-${year}`;
+  // Information about the three days forecast weather
+
+  const d1 = document.createElement('div');
+  const d2 = document.createElement('div');
+  const d3 = document.createElement('div');
+  
+  const dat1 = dataForecast.list[8].dt_txt;
+  const temp1 = dataForecast.list[8].main.temp;
+  d1.innerHTML = `${dat1}, ${temp1}&deg;C`;
+
+  const dat2 = dataForecast.list[16].dt_txt;
+  const temp2 = dataForecast.list[16].main.temp;
+  d2.innerHTML = `${dat2}, ${temp2}&deg;C`;
+
+  const dat3 = dataForecast.list[24].dt_txt;
+  const temp3 = dataForecast.list[24].main.temp;
+  d3.innerHTML = `${dat3}, ${temp3}&deg;C`;
+
+  weather.appendChild(d1);
+  weather.appendChild(d2);
+  weather.appendChild(d3);
+}
+
+
+///////////////////////////Random Members///////////////////////////
+
+const jsonUrl = 'https://zidreynkounkou-pro.github.io/wdd230/chamber/data/members.json';
+
+async function fetchLinks(){
+  const response = await fetch(jsonUrl);
+  if (response.ok){
+    const data = await response.json();
+    displayLinks(data);
+  }
+}
+
+fetchLinks();
+
+
+function displayLinks(data){
+  const silverGoldMembers = data.members.filter(member => member.membership == 'Silver Membership' || member.membership == 'Gold Membership');
+  const randomMembers = [];
+
+  while (randomMembers.length < 3 && silverGoldMembers.length > 0) {
+    const randomIndex = Math.floor(Math.random() * silverGoldMembers.length);
+    randomMembers.push(silverGoldMembers.splice(randomIndex, 1)[0]);
   }
 
-  // Update and display the latest visit information
+  console.log(randomMembers);
 
-  function visitInfornation(){
-    const latestVisit = localStorage.getItem('latestVisitDate');
-    const currentDate = getCurrentDate();
-    const visitDate = document.querySelector('.lastVisit');
+  const spotlights = document.querySelector('#spotlights');
+  
+  spotlights.innerHTML = randomMembers.map(members => `
 
-    if(latestVisit){
-      const latestVisitDate = Math.floor((new Date(currentDate) - new Date(latestVisit)) / (1000 * 60 * 60 * 24));
-
-      if(latestVisitDate === 0){
-        //Less than a day
-        visitDate.innerHTML = "Back so soon! Awesome";
-      }
-      else if (latestVisitDate === 1){
-        // One day ago visited
-        visitDate.innerHTML = "You last visited one day ago.";
-      }
-      else if (latestVisitDate > 1){
-        // More than a day
-        visitDate.innerHTML = `You last visited ${latestVisitDate} days ago.`;
-      }
-      
-    }
-    else {
-      // First visit
-      visitDate.innerHTML = "Welcome! Let us know if you have any questions.";
-    }
-    // Update and store the latest visit date in the latestVistDate variable.
-    localStorage.setItem("latestVisitDate", currentDate);
-  }
-
-  visitInfornation();
-});
-
-
+   <div class="spot-card">
+      <h2>${members.name}</h2>
+      <img src="${members.logo}" alt="${members.name} logo">
+      <p>${members.membership}</p>
+      <p>${members.address}</p>
+      <p>${members.phone}</p>
+      <a href="https://${members.url}" target="_blank">Know More</a>
+   </div>
+  `).join('');
+}

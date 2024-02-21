@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chamber of Commerce Home Page</title>
+<style>
+.advertisement-container {
+    text-align: center;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<!-- Spotlight Advertisement Container -->
+<div class="advertisement-container" id="advertisementContainer">
+    <h2>Spotlight Advertisements</h2>
+    <p>Loading...</p>
+</div>
+
+<script>
+// Sample JSON data source of members
+const members = [
+    { "name": "Member 1", "membershipLevel": "silver" },
+    { "name": "Member 2", "membershipLevel": "gold" },
+    { "name": "Member 3", "membershipLevel": "gold" },
+    { "name": "Member 4", "membershipLevel": "bronze" },
+    { "name": "Member 5", "membershipLevel": "silver" }
+];
+
+// Function to randomly select spotlight advertisements for silver or gold members
+function displaySpotlightAdvertisements(members) {
+    const silverGoldMembers = members.filter(member => member.membershipLevel === "silver" || member.membershipLevel === "gold");
+    const randomMembers = [];
+    while (randomMembers.length < 3 && silverGoldMembers.length > 0) {
+        const randomIndex = Math.floor(Math.random() * silverGoldMembers.length);
+        randomMembers.push(silverGoldMembers.splice(randomIndex, 1)[0]);
+    }
+
+    const advertisementContainer = document.getElementById('advertisementContainer');
+    advertisementContainer.innerHTML = `
+        <h2>Spotlight Advertisements</h2>
+        ${randomMembers.length > 0 ? 
+            randomMembers.map(member => `
+                <div>
+                    <h3>${member.name}</h3>
+                    <p>Membership Level: ${member.membershipLevel}</p>
+                </div>
+            `).join('') 
+            : '<p>No spotlight advertisements available.</p>'}
+    `;
+}
+
+// Display spotlight advertisements when the page loads
+window.onload = function() {
+    displaySpotlightAdvertisements(members);
+}
+</script>
+
+</body>
+</html>
