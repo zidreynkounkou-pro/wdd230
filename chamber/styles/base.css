@@ -895,9 +895,9 @@ td:hover, th:hover {
   color: white;
   text-align: center;
   font-size: 18px;
-  margin-bottom: 12px;
   padding: 20px;
   border-radius: 6px;
+  margin: 10px 10px 6px 10px;
 }
 
 .art-bd {
@@ -906,6 +906,7 @@ td:hover, th:hover {
   font-size: 17px;
   padding: 24px;
   line-height: 2;
+  border-radius: 10px;
 }
 
 .nature-cl {
